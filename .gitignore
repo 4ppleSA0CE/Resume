@@ -1,0 +1,24 @@
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.backup
+*.log
+*.aux
+*.out
+*.toc
+*.gz
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
