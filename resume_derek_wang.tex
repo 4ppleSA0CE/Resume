@@ -66,6 +66,14 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeSubheadingEducation}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textnormal{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -110,14 +118,14 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
-      {University of Waterloo}{Waterloo, ON, Canada}
+    \resumeSubheadingEducation
+      {University of Waterloo}{Expected Apr 2030}
       {Bachelor of Applied Science in Computer Engineering}
-      {Expected Apr 2030}
+      {GPA: 3.7}
   \resumeSubHeadingListEnd
-    \resumeItemListStart
-        \resumeItem {Relevant Coursework: Fundamentals of Programming, Linear Algebra for Engineering, Project Studio}
-    \resumeItemListEnd
+    % \resumeItemListStart
+    %     \resumeItem {Relevant Coursework: Fundamentals of Programming, Linear Algebra for Engineering, Project Studio}
+    % \resumeItemListEnd
     \vspace{-10pt}
 
 %-----------Experience---------------
@@ -136,11 +144,11 @@
                 {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
               \resumeItemListStart
                 \resumeItem{Developed Hardware-in-the-Loop (HITL) simulation systems in Python to address autonomous flight testing requirements for the 2026 National Annual UAS Student Competition}
-                \resumeItem{Engineered image and GPS synchronization pipeline with panning capabilities to solve real-time sensor data correlation}
+                % \resumeItem{Engineered image and GPS synchronization pipeline with panning capabilities to solve real-time sensor data correlation}
                 \resumeItem{Redesigned GPS movement architecture using periodic functions to eliminate unrealistic teleportation behavior, creating smooth trajectory interpolation systems that enhanced simulation realism and accuracy by 75\%}
               \resumeItemListEnd
                 \resumeSubheading
-                {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- May 2025}
+                {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- June 2025}
                 {Checkmate Robotics Club}{Markham, Ontario}
                   \resumeItemListStart
                     \resumeItem{Programmed competition software for Team 16868C Rushdown in the VEX Robotics Competition, securing invitation to the 2025 VRC World Championships among top 10\% of global teams}
@@ -162,6 +170,14 @@
     \vspace{-7pt}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+            {\textbf{{Coffee Chat Scheduler}} $|$ React $|$ Python $|$ FastAPI $|$ PostgreSQL $|$ Google Calendar API $|$ Git $|$ \underline{\emph{\href{https://github.com/4ppleSA0CE/coffee-chat-scheduler}{Source Code}}} $|$ \underline{\emph{\href{https://bookacoffeechat.vercel.app/}{Live Demo}}}}{}
+              \\[5mm]
+            \resumeItemListStart
+              \resumeItem{Built a full-stack web application using React and FastAPI, integrating Google Calendar API via OAuth 2.0 authentication with RESTful API endpoints, error handling, and CORS configuration}
+              \resumeItem{Implemented real-time availability checking and automated calendar event creation, storing booking data in a PostgreSQL database with SQLModel Object Relational Mapping}
+            \resumeItemListEnd
+    \vspace{-20pt}
+    \resumeProjectHeading
             {\textbf{{Autonomous Vehicle Control System}} $|$ C++ $|$ Docker $|$ CMake $|$ Foxglove $|$ \underline{\emph{\href{https://github.com/4ppleSA0CE/wato_asd_training}{Source Code}}} $|$ \underline{\emph{\href{https://youtu.be/X-JIZ522HMU}{Demo Video}}}}{}
               \\[5mm]
             \resumeItemListStart
@@ -175,14 +191,6 @@
             \resumeItemListStart
               \resumeItem{Architected and implemented an automated computer vision pipeline using YOLOv11 object detection, achieving 90\% accuracy in fruit classification}
               \resumeItem{Built comprehensive dataset of 816 images (514 training, 302 testing), optimizing model performance through strategic data augmentation and validation techniques}
-            \resumeItemListEnd
-    \vspace{-20pt}
-    \resumeProjectHeading
-            {\textbf{{TTC Escape Puzzle Game}} $|$ C\# $|$ Unity $|$ Git $|$ \underline{\emph{\href{https://github.com/4ppleSA0CE/GMTKgamejam}{Source Code}}}}{}
-              \\[5mm]
-            \resumeItemListStart
-              \resumeItem{Designed innovative puzzle game concept for the 2025 GMTK Game Jam, leading a team of 3 developers}
-              \resumeItem{Developed and implemented core gameplay mechanics using Unity and C\#, creating a Toronto Transit Commission-inspired puzzle game featuring looping mechanics that enhanced player engagement}
             \resumeItemListEnd
   
 % \vspace{-20pt}
@@ -201,9 +209,10 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
    \small{\item{   
-    \textbf{Languages}{: Java, C, C++, Python, HTML5, CSS, JavaScript, C\#, TypeScript} \\[1mm]
-    \textbf{Engineering Tools}{: Git, Fusion 360, Docker, Foxglove, Unity, Ultralytics} \\[1mm]
-    \textbf{Technologies}{: ReactJS, OpenCV, Tailwind CSS} \\ [1mm]
+    \textbf{Languages}{: C++, C, Java, Python, HTML5, CSS, JavaScript, C\#, TypeScript, SQL} \\[1mm]
+    \textbf{Engineering Tools}{: Git, Fusion 360, Docker, Foxglove, Unity, PostgreSQL, MongoDB, Supabase} \\[1mm]
+    \textbf{Technologies}{: React, FastAPI, Node.js, Express, PyTorch, OpenCV, Ultralytics, Tailwind CSS} \\ [1mm]
+    \textbf{Certifications}{: Docker Foundations Professional} \\ [1mm]
     % \textbf{Engineering Tools}{} \\ [1mm]
    }}
 \end{itemize}
