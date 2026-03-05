@@ -11,12 +11,19 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-% \input{glyphtounicode} (Commented out to avoid error) (uncomment for macos)
-\usepackage[margin=1.4cm]{geometry}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -24,11 +31,13 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{4.08003pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.15in}
- \addtolength{\textwidth}{0.3in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -38,7 +47,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\raggedright\large\bfseries
+  \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -48,29 +57,15 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{0pt}}
-  }
-}
-
-\newcommand{\classesList}[4]{
-    \item\small{
-        {#1 #2 #3 #4 \vspace{-2pt}}
+    {#1 \vspace{-2pt}}
   }
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubheadingEducation}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textnormal{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -83,136 +78,116 @@
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
+
 %----------HEADING----------
 \begin{center}
-  \vspace*{-35pt}
-    {\Large \scshape Derek Wang} \\[2mm]
-    \footnotesize
-    {Toronto, ON} $|$ 
-    {(416) 898-6127} $|$ 
-    {derek.wang1@uwaterloo.ca} $|$ 
-    {\underline{\href{https://www.linkedin.com/in/4derekwang/}{linkedin.com/in/4derekwang/}}} $|$
-    {\underline{\href{https://github.com/4ppleSA0CE}{github.com/4ppleSA0CE}}} $|$
-    {\underline{\href{https://www.derekwng.ca/}{derekwng.ca}}}
-    \vspace{-8pt}
+    \textbf{\Huge \scshape Derek Wang} \\ \vspace{1pt}
+    \small +1 (416) 898-6127 $|$ \href{mailto:derek.wang1@uwaterloo.ca}{\underline{derek.wang1@uwaterloo.ca}} $|$
+    \href{https://www.linkedin.com/in/4derekwang/}{\underline{linkedin.com/in/4derekwang}} $|$
+    \href{https://github.com/4ppleSA0CE}{\underline{github.com/4ppleSA0CE}} $|$
+    \href{https://www.derekwng.ca/}{\underline{derekwng.ca}}
 \end{center}
 
-%-----------TECHNICAL SKILLS-----------
-\section{Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-   \small{\item{   
-    \textbf{Languages}{: C++, C, Java, Python, HTML5, CSS, JavaScript, TypeScript, SQL} \\[1mm]
-    \textbf{Engineering Tools}{: Git, Fusion 360, Docker, Foxglove, PostgreSQL, MongoDB, Supabase} \\[1mm]
-    \textbf{Technologies}{: React, FastAPI, Node.js, Express, ROS2, PyTorch, OpenCV, Ultralytics, Tailwind CSS} \\ [1mm]
-    \textbf{Certifications}{: Docker Foundations Professional} \\ [1mm]
-    % \textbf{Engineering Tools}{} \\ [1mm]
-   }}
-\end{itemize}
 
-%-----------Experience---------------
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, C, Java, Python, JavaScript, TypeScript, SQL} \\
+     \textbf{Technologies}{: React, FastAPI, Node.js, Next.js, Express, ROS2, PyTorch, OpenCV} \\
+     \textbf{Engineering Tools}{: Git, Fusion 360, Docker, Foxglove, PostgreSQL, MongoDB, Supabase} \\
+     \textbf{Certifications}{: Docker Foundations Professional}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
 \section{Experience}
-    \resumeSubHeadingListStart
-          \resumeSubheading
-            {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
-            {WATonomous}{Waterloo, ON, Canada}
-          \resumeItemListStart
-            \resumeItem{Enabled on-rover path following by designing and implementing a ROS 2 autonomy navigation stack featuring costmap generation, persistent map memory, an A* path planner, and a Pure Pursuit controller}
-            \resumeItem{Improved object detection accuracy to 80\% mAP from a 30\% baseline by training a YOLO11s model on 3,448 images utilizing Ultralytics, learning rate scheduling, batch tuning, and data augmentation}
-            \resumeItem{Achieved real-time model inference at 30 FPS on rover hardware by implementing a deployment pipeline utilizing ONNX export, onnxslim optimization, and embedded inference integration}
-          \resumeItemListEnd
-                \resumeSubheading
-                {Autonomy Developer}{Aug 2025 -- Present}
-                {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
-              \resumeItemListStart
-                \resumeItem{Fulfilled autonomous flight testing requirements for the 2026 National Annual UAS Student Competition by developing Python-based Hardware-in-the-Loop (HITL) simulation systems using the MAVLink protocol}
-                \resumeItem{Eliminated unrealistic teleportation behavior and created smooth trajectory interpolation by redesigning the GPS movement architecture using periodic functions for continuous position updates}
-              \resumeItemListEnd
-                \resumeSubheading
-                {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- June 2025}
-                {Checkmate Robotics Club}{Markham, Ontario}
-                  \resumeItemListStart
-                    \resumeItem{Reduced robot positioning error by 40\% by programming competition software for Team 16868C Rushdownusing Odometry positioning, PID Controllers, and comprehensive error handling}
-                    \resumeItem{Earned an invitation to the 2025 VRC Worlds (top 10\% globally) and placed 5th out of 80 teams at Provincials by designing autonomous match routes and navigation algorithms featuring motion profiling and path planning}
-                  \resumeItemListEnd
-                % \resumeSubheading{Youth Badminton Instructor}{Mar 2024 -- Aug 2025}{City of Richmond Hill}{Richmond Hill, Ontario} 
-                % \resumeItemListStart
-                %     \resumeItem{Evaluated student skill levels and formulated personalized coaching strategies for 14 beginner to intermediate students (ages 9–16), yielding 85\% improvement in technique scores and game performance across 8-week terms}
-                %     \resumeItem{Pioneered comprehensive badminton curriculum focused on real game situations, achieving 100\% adoption across all badminton classes at 2 community centers (Rouge Woods and Richvale), enhancing student engagement by 40\%}
-                %     \resumeItem{Built individual mentorship programs through personalized feedback delivery, optimizing lesson plans to address specific performance gaps and foster an inclusive learning environment}
-                %     \resumeItemListEnd
-          % 
-    \resumeSubHeadingListEnd
-    \vspace{-13pt}
+  \resumeSubHeadingListStart
 
-%-----------ECS-----------
-\section{Projects} 
-    \vspace{-7pt}
+    \resumeSubheading
+      {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
+      {WATonomous}{Waterloo, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed a full ROS2 navigation stack (costmaps, A*, Pure Pursuit) enabling autonomous rover path following in dynamic environments}
+        \resumeItem{Led YOLO11s model retraining, improving detection mAP from 30\% to 80\% across 3,448 labeled images through hyperparameter tuning and augmentation redesign}
+        \resumeItem{Optimized and Deployed YOLO11s to rover hardware at 30 FPS using ONNX export and onnxslim optimization}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Autonomy Developer}{Aug 2025 -- Feb 2026}
+      {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Developed a Python HITL flight simulation system using MAVLink for the 2026 UAS Student Competition}
+        \resumeItem{Redesigned GPS movement system to eliminate teleportation bugs, enabling smooth trajectory interpolation via periodic position updates}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- June 2025}
+      {Checkmate Robotics Club}{Markham, Ontario}
+      \resumeItemListStart
+        \resumeItem{Reduced robot positioning error by 40\% using odometry and PID control in competition autonomous routines}
+        \resumeItem{Earned invitation to 2025 VRC Worlds (top 10\% globally) and placed 5th/80 at Provincials by designing autonomous routes with motion profiling and path planning}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-            {\textbf{\underline{\href{https://devpost.com/software/tbd-7j39dt}{Silhouette}}} $|$ Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK, \underline{\emph{\href{https://github.com/Rababb-P/Silhouette}{Source Code}}}}{}
-              \\[5mm]
-            \resumeItemListStart
-              \resumeItem{Secured a VC referral to build an active Proof of Concept for Merian Brothers, engineering a full-stack AI fashion advisor that processes live camera input with sub-500ms interaction latency.}
-              \resumeItem{Implemented a Next.js + React frontend and Express.js backend with MongoDB Atlas, supporting 3+ style pipelines (Streetwear, Formal, Sporty) and dynamic product linking}
-              \resumeItem{Orchestrated Overshoot.ai for live video outfit analysis with Gemini image/video models, designing prompt pipelines that manage async inference, rate limits, and style constraints to deliver personalized recommendations in under 2s}            
-            \resumeItemListEnd
-    \vspace{-20pt}
-    \resumeProjectHeading
-            {\textbf{\underline{\href{https://bookacoffeechat.vercel.app/}{Coffee Chat Scheduler}}} $|$ React, Python, FastAPI, PostgreSQL, Google Calendar API, \underline{\emph{\href{https://github.com/4ppleSA0CE/coffee-chat-scheduler}{Source Code}}}}{}
-              \\[5mm]
-            \resumeItemListStart
-              \resumeItem{Built a full-stack web application using React and FastAPI, integrating Google Calendar API via OAuth 2.0 authentication with RESTful API endpoints, error handling, and CORS configuration}
-              \resumeItem{Implemented real-time availability checking and automated calendar event creation, storing booking data in a PostgreSQL database with SQLModel Object Relational Mapping, reducing booking confirmation time to under 1000ms}
-            \resumeItemListEnd
-    \vspace{-20pt}
-    \resumeProjectHeading
-            {\textbf{\underline{\href{https://youtu.be/X-JIZ522HMU}{Autonomous Vehicle Control System}}} $|$ C++, ROS2, Docker, CMake, Foxglove, \underline{\emph{\href{https://github.com/4ppleSA0CE/wato_asd_training}{Source Code}}}}{}
-              \\[5mm]
-            \resumeItemListStart
-              \resumeItem{Engineered LiDAR-based perception pipeline processing sensor data to generate real-time costmaps with 0.1m resolution, integrating persistent memory mapping system for 95\% accurate dynamic environment representation}
-              \resumeItem{Architected a modular ROS2 navigation stack using A* pathfinding and Pure Pursuit control, achieving sub-0.5 m waypoint accuracy and 100\% obstacle avoidance across 50+ scenarios.}
-            \resumeItemListEnd
-  
-% \vspace{-20pt}
-%  \vspace{-20pt}
-%  \resumeProjectHeading
-%             {\textbf{{Bayview Robotics Club}} $|$ \emph{\href{https://www.instagram.com/bayviewrobotics/}{Instagram}{ $|$ }\href{https://github.com/BayviewRobotics}{Github}}}{September 2021 -- June 2025}
-%             \\[5mm]
-%           \resumeItemListStart
-%             \resumeItem{Led robotics team as \textbf{Vice President and main coder} in various robotics competitions such at \textbf{FIRST Tech Challenge} and \textbf{York Region Skills Challenge}}
-%             \resumeItem{Mentored \textbf{15 general members} and organize weekly STEM workshops, teaching them robotics basics in hardware and software.}
-%           \resumeItemListEnd
-\resumeSubHeadingListEnd
-\vspace{-15pt}
+          {\textbf{\href{https://github.com/Rababb-P/Silhouette}{\underline{Silhouette}}} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK}}{} 
+          \resumeItemListStart
+            \resumeItem{Built a real-time AI fashion advisor with live camera input at NexHacks, earning a VC referral for Merian Brothers}
+            \resumeItem{Implemented a Next.js + React frontend and Express.js backend with MongoDB Atlas, supporting 3+ style pipelines and dynamic product linking}
+            \resumeItem{Integrated Overshoot.ai and Gemini for live video outfit analysis, handling async inference and rate limiting to return recommendations in under 2s}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://bookacoffeechat.vercel.app/}{\underline{Coffee Chat Scheduler}}} $|$ \emph{React, Python, FastAPI, PostgreSQL, Google Calendar API}}{}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack booking app with React and FastAPI, integrating Google Calendar via OAuth 2.0 for real-time availability, scheduling 20+ coffee chats}
+            \resumeItem{Stored booking data in PostgreSQL via SQLModel, with automated calendar event creation and real-time availability checking}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://youtu.be/X-JIZ522HMU}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
+          \resumeItemListStart
+            \resumeItem{Built a C++ LiDAR perception pipeline generating real-time occupancy costmaps at 0.1m resolution in Foxglove}
+            \resumeItem{Developed and tested a full ROS2 autonomous navigation system with Docker, validating obstacle avoidance across 50+ simulated scenarios}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheadingEducation
+    \resumeSubheading
       {University of Waterloo}{Expected Apr 2030}
-      {Bachelor of Applied Science in Computer Engineering}
-      {GPA: 3.7}
+      {Bachelor of Applied Science in Computer Engineering}{GPA: 3.7}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}{: Linear Algebra, Fundamentals of Programming}}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
-    % \resumeItemListStart
-    %     \resumeItem {Relevant Coursework: Fundamentals of Programming, Linear Algebra for Engineering, Project Studio}
-    % \resumeItemListEnd
-    \vspace{-10pt}
+
+
+%-------------------------------------------
 \end{document}
