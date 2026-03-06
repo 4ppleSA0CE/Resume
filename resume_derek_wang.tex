@@ -100,14 +100,14 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge \scshape Derek Wang} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Derek Wang} \\ \vspace{4pt}
     \small +1 (416) 898-6127 $|$ \href{mailto:derek.wang1@uwaterloo.ca}{\underline{derek.wang1@uwaterloo.ca}} $|$
     \href{https://www.linkedin.com/in/4derekwang/}{\underline{linkedin.com/in/4derekwang}} $|$
     \href{https://github.com/4ppleSA0CE}{\underline{github.com/4ppleSA0CE}} $|$
     \href{https://www.derekwng.ca/}{\underline{derekwng.ca}}
 \end{center}
 
-
+\vspace{-10pt}
 %-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
@@ -163,10 +163,16 @@
             \resumeItem{Integrated Overshoot.ai and Gemini for live video outfit analysis, handling async inference and rate limiting to return recommendations in under 2s}
           \resumeItemListEnd
       \resumeProjectHeading
+          {\textbf{\href{https://github.com/4ppleSA0CE/Hierarchical-Reasoning-Retrieval}{\underline{Hierarchical Reasoning Retrieval}}} $|$ \emph{Node.js, Express, SQLite, Gemini}}{} 
+          \resumeItemListStart
+            \resumeItem{Built an LLM-powered document retrieval system that searches structured documents (contracts, specs) using beam search over heading-based tree structures instead of flat vector similarity}
+            \resumeItem{Implemented a markdown ingestion pipeline with heading-based chunking, tree construction, LLM summarization, and hybrid search combining FTS5 keyword filtering with LLM branch selection}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{\href{https://bookacoffeechat.vercel.app/}{\underline{Coffee Chat Scheduler}}} $|$ \emph{React, Python, FastAPI, PostgreSQL, Google Calendar API}}{}
           \resumeItemListStart
             \resumeItem{Built a full-stack booking app with React and FastAPI, integrating Google Calendar via OAuth 2.0 for real-time availability, scheduling 20+ coffee chats}
-            \resumeItem{Stored booking data in PostgreSQL via SQLModel, with automated calendar event creation and real-time availability checking}
+            \resumeItem{Stored booking data in PostgreSQL via SQLModel, with automated event creation and availability checking}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://youtu.be/X-JIZ522HMU}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
@@ -188,6 +194,6 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
+\vspace{-12pt}
 %-------------------------------------------
 \end{document}
