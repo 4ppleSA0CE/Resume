@@ -112,10 +112,14 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, SQL} \\
-     \textbf{Technologies}{: React, FastAPI, Node.js, Next.js, Express, ROS2, PyTorch, OpenCV} \\
-     \textbf{Engineering Tools}{: Git, Fusion 360, Docker, Foxglove, PostgreSQL, MongoDB, Supabase} \\
-     \textbf{Certifications}{: Docker Foundations Professional}
+     \renewcommand{\arraystretch}{1.10}
+     \begin{tabular}[t]{@{}l@{}}
+       \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, SQL} \\[2pt]
+       \textbf{Frameworks}{: React, Next.js, Node.js, Express, FastAPI} \\[2pt]
+       \textbf{Libraries/Tools}{: PyTorch, OpenCV, SQLite, PostgreSQL, MongoDB, Docker, Git} \\[2pt]
+       \textbf{Robotics}{: ROS2, Foxglove, Fusion 360} \\[2pt]
+       \textbf{Certifications}{: Docker Foundations Professional}
+     \end{tabular}
     }}
  \end{itemize}
 
@@ -159,26 +163,28 @@
           {\textbf{\href{https://github.com/Rababb-P/Silhouette}{\underline{Silhouette}}} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK}}{} 
           \resumeItemListStart
             \resumeItem{Built a real-time AI fashion advisor with live camera input at NexHacks, earning a VC referral to continue development for Merian Brothers}
-            \resumeItem{Built full-stack applicationgit to deliver real-time outfit analysis and product recommendations.}
-            \resumeItem{Integrated Overshoot.ai and Gemini for live video outfit analysis, handling async inference and rate limiting to return recommendations in under 2s}
+            \resumeItem{Built MERN full-stack application to deliver real-time outfit analysis and product recommendations}
+            \resumeItem{Integrated Gemini vision APIs for live video outfit analysis returning recommendations in under 2 seconds}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/Hierarchical-Reasoning-Retrieval}{\underline{Hierarchical Reasoning Retrieval}}} $|$ \emph{Node.js, Express, SQLite, Gemini}}{} 
           \resumeItemListStart
-            \resumeItem{Built an LLM-powered document retrieval system that searches structured documents (contracts, specs) using beam search over heading-based tree structures instead of flat vector similarity}
-            \resumeItem{Implemented a markdown ingestion pipeline with heading-based chunking, tree construction, LLM summarization, and hybrid search combining FTS5 keyword filtering with LLM branch selection}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://bookacoffeechat.vercel.app/}{\underline{Coffee Chat Scheduler}}} $|$ \emph{React, Python, FastAPI, PostgreSQL, Google Calendar API}}{}
-          \resumeItemListStart
-            \resumeItem{Built a full-stack booking app with React and FastAPI, integrating Google Calendar via OAuth 2.0 for real-time availability, scheduling 20+ coffee chats}
-            \resumeItem{Stored booking data in PostgreSQL via SQLModel, with automated event creation and availability checking}
+            \resumeItem{Built hierarchical LLM document retrieval system traversing heading trees instead of flat vector similarity}
+            \resumeItem{Implemented beam search traversal over document heading trees for structured document search}
+            \resumeItem{Built markdown ingestion pipeline generating document trees and hybrid retrieval using SQLite FTS5 + LLM branch selection}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://youtu.be/X-JIZ522HMU}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
           \resumeItemListStart
             \resumeItem{Built a C++ LiDAR perception pipeline generating real-time occupancy costmaps at 0.1m resolution in Foxglove}
-            \resumeItem{Developed and tested a full ROS2 autonomous navigation system with Docker, validating obstacle avoidance across 50+ simulated scenarios}
+            \resumeItem{Developed ROS2 autonomous navigation stack with Docker, validating obstacle avoidance across 50+ simulations.}
+            \resumeItem{Simulated robot navigation and visualized perception outputs in Foxglove for debugging and testing}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://bookacoffeechat.vercel.app/}{\underline{Coffee Chat Scheduler}}} $|$ \emph{React, Python, FastAPI, PostgreSQL, Google Calendar API}}{}
+          \resumeItemListStart
+            \resumeItem{Built full stack booking app integrating Google Calendar OAuth for real-time scheduling (20+ coffee chats)}
+            \resumeItem{Stored booking data in PostgreSQL via SQLModel, with automated event creation and availability checking}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
