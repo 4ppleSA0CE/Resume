@@ -132,25 +132,25 @@
       {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
       {WATonomous}{Waterloo, ON, Canada}
       \resumeItemListStart
-        \resumeItem{Archetected and Deployed ROS2 navigation stack (costmaps, persistent map memory, A* planning, Pure Pursuit) enabling autonomous rover path following in dynamic environments (hills, obstacles, etc).}
+        \resumeItem{Architected and deployed ROS2 navigation stack (costmaps, A* planning, Pure Pursuit) enabling autonomous rover path following in dynamic environments (hills, obstacles, holes), simulating Mars environment}
         \resumeItem{Led YOLO11s model retraining, improving detection mAP from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
-        \resumeItem{Optimized YOLO11s inference to 30 FPS on rover hardware via ONNX export and onnxslim optimization.}
+        \resumeItem{Optimized YOLO11s inference to 30 FPS on rover hardware via ONNX export and onnxslim optimization}
       \resumeItemListEnd
 
     \resumeSubheading
       {Autonomy Developer}{Aug 2025 -- Feb 2026}
       {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
       \resumeItemListStart
-        \resumeItem{Developed Python hardware-in-the-loop UAV simulation using Pixhawk flight controller and MAVLink protocol for the 2026 UAS Student Competition.}
-        \resumeItem{Eliminated GPS teleportation bugs and achieved smooth trajectory interpolation via periodic position updates, drone speed control, position thresholding, and trajectory smoothing algorithms}
+        \resumeItem{Developed Python hardware-in-the-loop UAV simulation using Ardupilot Mission Planner, Pixhawk flight controller and MAVLink protocol for the 2026 UAS Student Competition}
+        \resumeItem{Eliminated GPS teleportation bugs upon injection and achieved smooth trajectory interpolation at 24 FPS via periodic position updates, drone speed control, position thresholding, and trajectory smoothing algorithms}
         \resumeItemListEnd
 
     \resumeSubheading
       {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- June 2025}
       {Checkmate Robotics Club}{Markham, Ontario}
       \resumeItemListStart
-        \resumeItem{Reduced autonomous robot positioning error to ±0.5cm by implementing wheel odometry for position estimation and PID control with trapezoidal motion profiling algorithms for trajectory control.}
-        \resumeItem{Qualified for 2025 VEX World Championships (top 10\% globally) and placed 5th/80 at Provincials}
+        \resumeItem{Reduced autonomous robot positioning error to ±0.5cm by implementing wheel odometry, distance sensors, and IMU for position estimation, and PID control with trapezoidal motion profiling algorithms for trajectory control}
+        \resumeItem{Qualified for 2025 VEX World Championships (top 10\% globally) and placed 5th/80 at Ontario Provincials}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -163,22 +163,22 @@
       \resumeProjectHeading
           {\textbf{\href{https://github.com/Rababb-P/Silhouette}{\underline{Silhouette}}} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK}}{} 
           \resumeItemListStart
-            \resumeItem{Built a real-time AI fashion advisor with live camera input at NexHacks, earning a VC referral to continue development for Merian Brothers}
-            \resumeItem{Built MERN full-stack application to deliver real-time outfit analysis and product recommendations}
+            \resumeItem{Developed a real-time AI fashion advisor with live camera input at NexHacks, earning a VC referral to continue development of Proof of Concept for Merian Brothers}
+            \resumeItem{Designed and delivered a MERN full-stack application for real-time outfit analysis and product recommendations}
             \resumeItem{Orchestrated Overshoot.ai and Gemini vision APIs, designing prompt pipelines that manage async inference, rate limits, and style constraints to deliver personalized recommendations in under 2s}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/Hierarchical-Reasoning-Retrieval}{\underline{Hierarchical Reasoning Retrieval}}} $|$ \emph{Node.js, Express, SQLite, Gemini}}{} 
           \resumeItemListStart
-            \resumeItem{Built hierarchical LLM document retrieval system traversing heading trees instead of flat vector similarity}
+            \resumeItem{Designed hierarchical LLM document retrieval system traversing heading trees instead of flat vector similarity}
+            \resumeItem{Decreased LLM token usage by up to 80\% and optimized retrieval by engineering an SQLite pipeline that chunks markdown into document trees using bottom-up summarization, keyword pre-filtering, and tree search}
             \resumeItem{Implemented beam search traversal over document heading trees for structured document search}
-            \resumeItem{Built markdown ingestion pipeline generating document trees and hybrid retrieval using SQLite FTS5 + LLM branch selection}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://youtu.be/X-JIZ522HMU}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
           \resumeItemListStart
             \resumeItem{Built a C++ LiDAR perception pipeline generating real-time occupancy costmaps at 0.1m resolution in Foxglove}
-            \resumeItem{Developed ROS2 autonomous navigation stack with Docker, validating obstacle avoidance across 50+ simulations.}
+            \resumeItem{Developed ROS2 autonomous navigation stack with Docker, validated 100\% obstacle avoidance in 50+ simulations}
             \resumeItem{Simulated robot navigation and visualized perception outputs in Foxglove for debugging and testing}
           \resumeItemListEnd
       % \resumeProjectHeading
