@@ -123,13 +123,23 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Backend Software Engineer}{March 2026 -- Present}
+      {Kenoxis Technologies Inc.}{Mississauga, ON, Canada}
+      \resumeItemListStart
+        \resumeItem{Built backend APIs and microservices for an AI-powered fraud detection platform, reduced API latency by~35\%}
+        \resumeItem{Designed schemas and ingestion pipelines for job posting data, improving update frequency from daily to hourly}
+        \resumeItem{Integrated LLM inference into backend services via async queues, reducing time-to-flag suspicious postings by~60\%}
+        \resumeItem{Implemented JWT/OAuth2 authentication enforcing platform security and multi-tenant data isolation}
+        \resumeItem{Developed candidate distance and map data APIs, enabling employers to filter and visualize applicants by location}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
       {WATonomous}{Waterloo, ON, Canada}
       \resumeItemListStart
         \resumeItem{Architected and deployed ROS2 navigation stack (costmaps, A* planning, Pure Pursuit) enabling autonomous rover path following in dynamic environments (hills, obstacles, holes), simulating Mars environment}
-        \resumeItem{Led YOLO11s model retraining, improving detection mAP from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
+        \resumeItem{Led YOLO11s model retraining, improving detection mean average precision from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
         \resumeItem{Optimized YOLO11s inference to 30 FPS on rover hardware via ONNX export and onnxslim optimization}
       \resumeItemListEnd
 
@@ -140,14 +150,6 @@
         \resumeItem{Developed Python hardware-in-the-loop UAV simulation using Ardupilot Mission Planner, Pixhawk flight controller and MAVLink protocol for the 2026 UAS Student Competition}
         \resumeItem{Eliminated GPS teleportation bugs upon injection and achieved smooth trajectory interpolation at 24 FPS via periodic position updates, drone speed control, position thresholding, and trajectory smoothing algorithms}
         \resumeItemListEnd
-
-    \resumeSubheading
-      {Robotics Software Programmer -- VEX Robotics Competition}{Sept 2024 -- June 2025}
-      {Checkmate Robotics Club}{Markham, Ontario}
-      \resumeItemListStart
-        \resumeItem{Reduced autonomous robot positioning error to ±0.5cm by implementing wheel odometry, distance sensors, and IMU for position estimation, and PID control with trapezoidal motion profiling algorithms for trajectory control}
-        \resumeItem{Qualified for 2025 VEX World Championships (top 10\% globally) and placed 5th/80 at Ontario Provincials}
-      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -169,11 +171,11 @@
             \resumeItem{Secured a VC referral to continue development as a Proof of Concept (\href{https://github.com/Parsa1ll/tailorai}{\underline{Tailor AI}}) for Merian Brothers}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/4ppleSA0CE/Hierarchical-Reasoning-Retrieval}{\underline{Hierarchical Reasoning Retrieval}}} $|$ \emph{Node.js, Express, SQLite, Gemini}}{} 
+          {\textbf{\href{https://github.com/4ppleSA0CE/github-repo-analyzer}{\underline{Github Repository Analyzer}}} $|$ \emph{Node.js, Express, React, Gemini, Octokit, Puppeteer}}{} 
           \resumeItemListStart
-            \resumeItem{Designed hierarchical LLM document retrieval system traversing heading trees instead of flat vector similarity}
-            \resumeItem{Decreased LLM token usage by up to 80\% and optimized retrieval by engineering an SQLite pipeline that chunks markdown into document trees using bottom-up summarization, keyword pre-filtering, and tree search}
-            \resumeItem{Implemented beam search traversal over document heading trees for structured document search}
+            \resumeItem{Designed and Shipped a full-stack AI-powered GitHub repository analyzer that reduced codebase evaluation time by 98\% to under 90 seconds per repository, making technical repos accessible to non-technical stakeholders}
+            \resumeItem{Integrated Octokit and Puppeteer to automatically extract repo metadata, file trees, and source code for analysis}
+            \resumeItem{Developed a 3-agent Gemini AI pipeline generating 3 different audience-specific reports from a single codebase scan}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://youtu.be/X-JIZ522HMU}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
@@ -193,7 +195,7 @@
        \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, SQL} \\[2pt]
        \textbf{Frameworks}{: React, Next.js, Node.js, Express, FastAPI} \\[2pt]
        \textbf{Libraries/Tools}{: PyTorch, OpenCV, SQLite, PostgreSQL, MongoDB, Docker, Git, ROS2, Foxglove, Fusion 360} \\[2pt]
-       \textbf{Certifications}{: Docker Foundations Professional}
+      %  \textbf{Certifications}{: Docker Foundations Professional}
      \end{tabular}
     }}
  \end{itemize}
