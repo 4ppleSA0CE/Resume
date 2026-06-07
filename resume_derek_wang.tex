@@ -113,7 +113,7 @@
   \resumeSubHeadingListStart
       \resumeSubheading
       {University of Waterloo}{Expected Apr 2030}
-      {Bachelor of Applied Science in Computer Engineering (Co-op)}{GPA: 3.7}
+      {Bachelor of Applied Science in Computer Engineering (Co-op)}{}%{GPA: 3.7}
       % \resumeItemListStart
       %   \resumeItem{\textbf{Relevant Coursework}{: Linear Algebra, Fundamentals of Programming}}
       % \resumeItemListEnd
@@ -123,9 +123,18 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+  \resumeSubheading
+      {Software Engineer Intern}{May 2026 -- Present}
+      {Prandtl Dynamics Inc.}{Richmond Hill, ON}
+      \resumeItemListStart
+        \resumeItem{Improved edge detection and cut inference footprint, measured by 98\% mAP, 40\% fewer false alarms per hour, and halved size, by spearheading YAMNet$\to$EfficientAT migration with retrained heads and golden-set regression gates}
+        \resumeItem{Pioneered Raspberry Pi ring-buffer TCP streamer indexing WAV + JSON metadata into SQLite for field recording}
+        \resumeItem{Enabled real-time multi-target acoustic tracking, measured by coasting-aware persistence across 5 simultaneous targets, by integrating SRP-PHAT beamforming, EfficientAT detection, and UKF+GNN fusion}
+      \resumeItemListEnd
+  
     \resumeSubheading
-      {Software Engineer Intern}{March 2026 -- Present}
-      {Kenoxis Technologies Inc.}{Mississauga, ON, Canada}
+      {Software Engineer Intern}{March 2026 -- June 2026}
+      {Kenoxis Technologies Inc.}{Mississauga, ON}
       \resumeItemListStart
         \resumeItem{Built backend APIs and microservices for an AI-powered fraud detection platform, reduced API latency by~35\%}
         \resumeItem{Designed schemas and ingestion pipelines for job posting data, improving update frequency from daily to hourly}
@@ -137,20 +146,20 @@
 
     \resumeSubheading
       {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
-      {WATonomous}{Waterloo, ON, Canada}
+      {WATonomous}{Waterloo, ON}
       \resumeItemListStart
         \resumeItem{Architected and deployed ROS2 navigation stack (costmaps, A* planning, Pure Pursuit) enabling autonomous rover path following in dynamic environments (hills, obstacles, holes), simulating Mars environment}
         \resumeItem{Led YOLO11s model retraining, improving detection mean average precision from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
         \resumeItem{Optimized YOLO11s inference to 24 FPS on rover hardware via ONNX export and onnxslim optimization}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Autonomy Developer}{Aug 2025 -- Feb 2026}
-      {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
-      \resumeItemListStart
-        \resumeItem{Developed Python hardware-in-the-loop UAV simulation using Mission Planner, Pixhawk and MAVLink protocol}
-        \resumeItem{Eliminated GPS teleportation bugs upon injection and achieved smooth trajectory interpolation at 24 FPS via periodic position updates, drone speed control, position thresholding, and trajectory smoothing algorithms}
-        \resumeItemListEnd
+    % \resumeSubheading
+    %   {Autonomy Developer}{Aug 2025 -- Feb 2026}
+    %   {Waterloo Aerial Robotics Group}{Waterloo, ON, Canada}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed Python hardware-in-the-loop UAV simulation using Mission Planner, Pixhawk and MAVLink protocol}
+    %     \resumeItem{Eliminated GPS teleportation bugs upon injection and achieved smooth trajectory interpolation at 24 FPS via periodic position updates, drone speed control, position thresholding, and trajectory smoothing algorithms}
+    %     \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -178,12 +187,12 @@
             \resumeItem{Integrated Octokit and Puppeteer to automatically extract repo metadata, file trees, and source code for analysis}
             \resumeItem{Developed a 3-agent Gemini AI pipeline generating 3 different audience-specific reports from a single codebase scan}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
-          \resumeItemListStart
-            \resumeItem{Built a C++ LiDAR perception pipeline generating real-time occupancy costmaps at 0.1m resolution in Foxglove}
-            \resumeItem{Developed ROS2 autonomous navigation stack with Docker, validated 100\% obstacle avoidance in 50+ simulations}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{\href{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
+      %     \resumeItemListStart
+      %       \resumeItem{Built a C++ LiDAR perception pipeline generating real-time occupancy costmaps at 0.1m resolution in Foxglove}
+      %       \resumeItem{Developed ROS2 autonomous navigation stack with Docker, validated 100\% obstacle avoidance in 50+ simulations}
+      %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 \vspace{-12pt}
