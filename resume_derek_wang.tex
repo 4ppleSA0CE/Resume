@@ -36,12 +36,12 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.35in}
 
 \urlstyle{same}
 
-\raggedbottom
+\flushbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
@@ -57,7 +57,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
@@ -107,7 +107,7 @@
     \href{https://www.derekwng.ca/}{\underline{derekwng.ca}}
 \end{center}
 
-\vspace{-18pt}
+\vspace{-16pt}
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
@@ -119,7 +119,7 @@
       % \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+\vspace{-10pt}
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -127,28 +127,30 @@
       {Software Engineer Intern}{May 2026 -- Present}
       {Prandtl Dynamics Inc.}{Richmond Hill, ON}
       \resumeItemListStart
-        \resumeItem{Improved edge detection and cut inference footprint, measured by 98\% mAP, 40\% fewer false alarms per hour, and halved size, by spearheading YAMNet$\to$EfficientAT migration with retrained heads and golden-set regression gates}
-        \resumeItem{Pioneered Raspberry Pi ring-buffer TCP streamer indexing WAV + JSON metadata into SQLite for field recording}
-        \resumeItem{Enabled real-time multi-target acoustic tracking, measured by coasting-aware persistence across 5 simultaneous targets, by integrating SRP-PHAT beamforming, EfficientAT detection, and UKF+GNN fusion}
+        \resumeItem{Cut false alarms by 40\% per hour and halved model size at 98\% mAP by migrating audio detection to EfficientAT}
+        \resumeItem{Added golden-set regression testing to catch accuracy drops from the YAMNet migration before deployment}
+        \resumeItem{Slashed recording setup from 10 to 2 minutes by replacing a tethered rig with a Raspberry Pi streamer that buffers audio in memory and streams to SQLite over a single SSH command}
+        \resumeItem{Indexed recordings with WAV + JSON metadata in SQLite for fast retrieval and downstream model training}
+        \resumeItem{Enabled real-time tracking of 5 simultaneous moving targets at 170m range and 20ms latency, by integrating SRP-PHAT acoustic beamforming with UKF+GNN multi-sensor fusion}
       \resumeItemListEnd
   
     \resumeSubheading
       {Software Engineer Intern}{March 2026 -- June 2026}
       {Kenoxis Technologies Inc.}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Built backend APIs and microservices for an AI-powered fraud detection platform, reduced API latency by~35\%}
+        \resumeItem{Built backend APIs and scalable microservices for a fraud detection platform, reducing API latency by~35\%}
         \resumeItem{Designed schemas and ingestion pipelines for job posting data, improving update frequency from daily to hourly}
         \resumeItem{Integrated LLM inference into backend services via async queues, reducing time-to-flag suspicious postings by~60\%}
         \resumeItem{Developed candidate distance and map data APIs, enabling employers to filter and visualize applicants by location}
         \resumeItem{Implemented JWT/OAuth2 authentication enforcing platform security and multi-tenant data isolation}
-        \resumeItem{Authored and maintained internal API documentation, technical guides, and onboarding runbooks}
+        \resumeItem{Authored and maintained internal API documentation, and participated in code reviews and CI/CD pipelines}
       \resumeItemListEnd
 
     \resumeSubheading
       {Autonomous Self Driving Software Engineer}{Sept 2025 -- Present}
       {WATonomous}{Waterloo, ON}
       \resumeItemListStart
-        \resumeItem{Architected and deployed ROS2 navigation stack (costmaps, A* planning, Pure Pursuit) enabling autonomous rover path following in dynamic environments (hills, obstacles, holes), simulating Mars environment}
+        \resumeItem{Architected and deployed ROS2 navigation stack implementing A* graph search over costmap grids with Pure Pursuit control, enabling autonomous rover path planning in dynamic terrain (hills, obstacles, holes)}
         \resumeItem{Led YOLO11s model retraining, improving detection mean average precision from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
         \resumeItem{Optimized YOLO11s inference to 24 FPS on rover hardware via ONNX export and onnxslim optimization}
       \resumeItemListEnd
@@ -163,7 +165,7 @@
 
   \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+\vspace{-10pt}
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
@@ -171,19 +173,19 @@
           {\textbf{\href{https://github.com/Karan-Gupta07/RepairBOT}{\underline{Reparo - AI Repair Tool (Hack Canada 2026 Winner)}}} $|$ \emph{Python, FastAPI, Swift, Gemini, SerpAPI, Reactiv}}{}
           \resumeItemListStart
             \resumeItem{Generated 5+ structured repair outputs from a single device image using a computer-vision + Gemini reasoning pipeline that performs component detection and contextual repair inference for consumer devices}
-            \resumeItem{Built a FastAPI orchestration service that normalizes unstructured LLM responses into a typed repair schema, enabling deterministic UI rendering of repair steps, cost estimates, and required tools}
+            \resumeItem{Built a FastAPI orchestration service applying object-oriented design to normalize unstructured LLM responses into typed repair models, enabling deterministic UI rendering of repair steps, cost estimates, and required tools}
             \resumeItem{Designed a multi-stage parts retrieval pipeline (SerpAPI → Shopify storefront discovery → Shopify product APIs) to automatically source purchasable repair components surfaced in a Swift Reactiv App Clip}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/Rababb-P/Silhouette}{\underline{Silhouette - Cursor for Fashion}}} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK}}{} 
           \resumeItemListStart
-            \resumeItem{Delivered personalized fashion recommendations in under 2s at by building Gemini pipelines with MERN stack that orchestrate async inference, product recommendations, and style constraints over Next.js live camera input}
+            \resumeItem{Delivered personalized fashion recommendations in under 2s by building Gemini pipelines with MERN stack that orchestrate async inference, product recommendations, and style constraints over Next.js live camera input}
             \resumeItem{Secured a VC referral to continue development as a Proof of Concept (\href{https://github.com/Parsa1ll/tailorai}{\underline{Tailor AI}}) for Merian Brothers}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/github-repo-analyzer}{\underline{Github Repository Analyzer}}} $|$ \emph{Node.js, Express, React, Gemini, Octokit, Puppeteer}}{} 
           \resumeItemListStart
-            \resumeItem{Designed and Shipped a full-stack AI-powered GitHub repository analyzer that reduced codebase evaluation time by 98\% to under 90 seconds per repository, making technical repos accessible to non-technical stakeholders}
+            \resumeItem{Designed and shipped a full-stack AI-powered GitHub repository analyzer that reduced codebase evaluation time by 98\% to under 90 seconds per repository, making technical repos accessible to non-technical stakeholders}
             \resumeItem{Integrated Octokit and Puppeteer to automatically extract repo metadata, file trees, and source code for analysis}
             \resumeItem{Developed a 3-agent Gemini AI pipeline generating 3 different audience-specific reports from a single codebase scan}
           \resumeItemListEnd
@@ -195,7 +197,7 @@
       %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-\vspace{-12pt}
+\vspace{-10pt}
 %-----------SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}, topsep=0pt, itemsep=0pt]
