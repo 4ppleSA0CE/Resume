@@ -127,23 +127,22 @@
       {Software Engineer Intern}{May 2026 -- Present}
       {Prandtl Dynamics Inc.}{Richmond Hill, ON}
       \resumeItemListStart
+        \resumeItem{Enabled real-time tracking of 5 simultaneous moving targets at 170m range and 20ms latency by integrating SRP-PHAT acoustic beamforming with UKF + Global Nearest Neighbor multi-sensor fusion}
         \resumeItem{Cut false alarms by 40\% and halved model size at 98\% mAP by migrating audio detection to EfficientAT}
-        \resumeItem{Added golden-set regression testing to catch accuracy drops from the YAMNet migration before deployment}
-        \resumeItem{Slashed recording setup from 10 to 2 minutes by replacing a tethered rig with a Raspberry Pi streamer that buffers audio in memory and streams to SQLite over a single SSH command}
-        \resumeItem{Indexed recordings with WAV + JSON metadata in SQLite for fast retrieval and downstream model training}
-        \resumeItem{Enabled real-time tracking of 5 simultaneous moving targets at 170m range and 20ms latency, by integrating SRP-PHAT acoustic beamforming with UKF+GNN multi-sensor fusion}
+        \resumeItem{Eliminated cross-tenant data exposure by org-scoping queries across 6 dashboard services and WebSockets}
+        \resumeItem{Hardened auth and supply chain with fail-closed guards, timing-safe key checks, and CI audit gating}
+        \resumeItem{Slashed recording setup from 10 to 2 minutes by replacing a tethered rig with a Raspberry Pi service that buffers audio in memory and syncs WAV + JSON metadata into SQLite over SSH for downstream model training}
       \resumeItemListEnd
   
     \resumeSubheading
       {Software Engineer Intern}{March 2026 -- June 2026}
       {Kenoxis Technologies Inc.}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Built backend APIs and scalable microservices for a fraud detection platform, reducing API latency by~35\%}
-        \resumeItem{Designed schemas and ingestion pipelines for job posting data, improving update frequency from daily to hourly}
+        \resumeItem{Cut API latency by 35\% with Redis caching across Node.js microservices on a fraud detection platform}
+        \resumeItem{Designed MongoDB schemas and ingestion pipelines for job postings, improving refresh from daily to hourly}
         \resumeItem{Integrated LLM inference into backend services via async queues, reducing time-to-flag suspicious postings by~60\%}
-        \resumeItem{Developed candidate distance and map data APIs, enabling employers to filter and visualize applicants by location}
-        \resumeItem{Implemented JWT/OAuth2 authentication enforcing platform security and multi-tenant data isolation}
-        \resumeItem{Authored and maintained internal API documentation, and contributed to code reviews and CI/CD pipelines}
+        \resumeItem{Built candidate distance and map APIs using MongoDB geospatial queries to filter applicants by location}
+        \resumeItem{Accelerated onboarding of 5+ new interns by authoring internal API documentation and integration guides}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -207,7 +206,7 @@
        \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, SQL} \\[2pt]
        \textbf{Frameworks}{: React, Next.js, Node.js, Express, FastAPI, Vite} \\[2pt]
        \textbf{Cloud/DevOps}{: AWS, Azure, Docker, GitHub Actions} \\[2pt]
-       \textbf{Libraries/Tools}{: PyTorch, OpenCV, SQLite, PostgreSQL, MongoDB, Git, ROS2, Foxglove, Fusion 360} \\[2pt]
+       \textbf{Libraries/Tools}{: PyTorch, OpenCV, SQLite, PostgreSQL, MongoDB, Redis, Git, ROS2, Foxglove, Fusion 360} \\[2pt]
       %  \textbf{Certifications}{: Docker Foundations Professional}
      \end{tabular}
     }}
