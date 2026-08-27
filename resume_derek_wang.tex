@@ -169,24 +169,26 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/Karan-Gupta07/RepairBOT}{\underline{Reparo - AI Repair Tool (Hack Canada 2026 Winner)}}} $|$ \emph{Python, FastAPI, Swift, Gemini, SerpAPI, Reactiv SDK}}{}
+          {\textbf{\href{https://github.com/4ppleSA0CE/7-DOF-Arm}{\underline{7-DOF Robotic Arm Motion Control}}} $|$ \emph{C++17, Eigen, MuJoCo, CMake, React, TypeScript}}{}
+          \resumeItemListStart
+            \resumeItem{Developed 7-DOF arm kinematics and dynamics from scratch in C++17/Eigen without KDL, MoveIt, or ROS}
+            \resumeItem{Achieved sub-0.2 mm tip error over 50+ scenarios via jerk-limited trajectories and 1 kHz computed-torque control}
+            \resumeItem{Solved 6-DOF inverse kinematics with adaptive damped least squares and 26-seed deterministic restarts}
+            \resumeItem{Prevented collisions via null-space projection of 4 secondary objectives and swept-path checking}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/4ppleSA0CE/State-Estimation-And-Tracking}{\underline{Autonomous Vehicle State Estimation \& Tracking}}} $|$ \emph{C++, Eigen, ROS 2, Python, Docker, KITTI}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented a 15-state error-state Kalman filter fusing 100 Hz IMU with 10 Hz GPS in C++/Eigen on ROS 2}
+            \resumeItem{Localized the ego vehicle to 0.558 m mean error over 8 KITTI sequences (6.6 km), cross-checked via evo}
+            \resumeItem{Wrote a 4-mode IMM multi-object tracker (CV, CA, coordinated-turn UKFs) with Hungarian data association}
+            \resumeItem{Coupled tracking to localization by world-framing detections with the filter's pose (error correlation 0.976)}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/Karan-Gupta07/RepairBOT}{\underline{Reparo - AI Repair Tool (Hack Canada 2026 Winner)}}} $|$ \emph{Python, FastAPI, Swift, Gemini}}{}
           \resumeItemListStart
             \resumeItem{Prototyped a computer-vision + Gemini reasoning pipeline producing structured repair plans from a single device photo in under 60 seconds via component detection and contextual repair inference}
             \resumeItem{Engineered a FastAPI orchestration service that normalizes unstructured LLM responses into typed repair models, enabling deterministic UI rendering of repair steps, cost estimates, and required tools}
-            \resumeItem{Automated repair-part sourcing with a multi-stage retrieval pipeline (SerpAPI → Shopify storefront discovery → Shopify product APIs), surfacing purchasable components in a Swift Reactiv App Clip}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/Rababb-P/Silhouette}{\underline{Silhouette - Cursor for Fashion}}} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini, Overshoot.ai SDK}}{} 
-          \resumeItemListStart
-            \resumeItem{Delivered personalized fashion recommendations in under 2s by building Gemini pipelines with MERN stack that orchestrate async inference, product recommendations, and style constraints over Next.js live camera input}
-            \resumeItem{Secured a VC referral to continue development as a Proof of Concept (\href{https://github.com/Parsa1ll/tailorai}{\underline{Tailor AI}}) for Merian Brothers}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/4ppleSA0CE/github-repo-analyzer}{\underline{Github Repository Analyzer}}} $|$ \emph{Node.js, Express, React, Gemini, Octokit, Puppeteer}}{} 
-          \resumeItemListStart
-            \resumeItem{Designed and shipped a full-stack GitHub repository analyzer that turns any public repo into audience-specific reports in under 90 seconds, making technical codebases accessible to non-technical stakeholders}
-            \resumeItem{Integrated Octokit and Puppeteer to automatically extract repo metadata, file trees, and source code for analysis}
-            \resumeItem{Developed a 3-agent Gemini pipeline tailoring reports to technical, product, and beginner audiences per scan}
           \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{\href{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
@@ -203,10 +205,10 @@
     \small{\item{
      \renewcommand{\arraystretch}{1.10}
      \begin{tabular}[t]{@{}l@{}}
-       \textbf{Languages}{: C++, Java, Python, JavaScript, TypeScript, SQL} \\[2pt]
+       \textbf{Languages}{: C++, Python, MATLAB, Java, JavaScript, TypeScript, SQL} \\[2pt]
        \textbf{Frameworks}{: React, Next.js, Node.js, Express, FastAPI, Vite} \\[2pt]
-       \textbf{Cloud/DevOps}{: Docker, GitHub Actions} \\[2pt]
-       \textbf{Libraries/Tools}{: PyTorch, OpenCV, SQLite, PostgreSQL, MongoDB, Redis, Git, ROS2, Foxglove, Fusion 360} \\[2pt]
+       \textbf{Cloud/DevOps}{: Docker, GitHub Actions, CMake} \\[2pt]
+       \textbf{Libraries/Tools}{: PyTorch, OpenCV, Eigen, MuJoCo, ROS2, ONNX, SQLite, MongoDB, Redis, Git, Foxglove} \\[2pt]
       %  \textbf{Certifications}{: Docker Foundations Professional}
      \end{tabular}
     }}
