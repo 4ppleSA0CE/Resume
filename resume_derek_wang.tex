@@ -57,7 +57,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-1pt}}
+    {#1\vspace{-1pt}}
   }
 }
 
@@ -127,31 +127,30 @@
       {Software Engineer Intern}{May 2026 -- August 2026}
       {Prandtl Dynamics Inc.}{Toronto, ON}
       \resumeItemListStart
-        \resumeItem{Enabled real-time tracking of 5+ simultaneous moving targets at 170m range and 20ms latency by integrating SRP-PHAT acoustic beamforming with Unscented Kalman Filter + Global Nearest Neighbor multi-sensor fusion}
-        \resumeItem{Cut false alarms by 40\% and halved model size at 98\% mAP by migrating audio detection to EfficientAT}
-        \resumeItem{Eliminated cross-tenant data exposure by org-scoping queries across 6 dashboard services and WebSockets}
-        \resumeItem{Hardened auth and supply chain with fail-closed guards, timing-safe key checks, and CI audit gating}
-        \resumeItem{Slashed recording setup from 10 to 2 minutes by replacing a tethered rig with a Raspberry Pi service that buffers audio in memory and syncs WAV + JSON metadata into SQLite over SSH for downstream model training}
+        \resumeItem{Tracked 5+ moving targets at 170 m with 20 ms latency by chaining SRP-PHAT azimuth/elevation estimation, delay-and-sum beamforming per source, and Unscented Kalman Filter + Global Nearest Neighbor tracking}
+        \resumeItem{Raised acoustic drone detection to 98\% mAP with 40\% fewer false alarms and half the model size via EfficientAT}
+        \resumeItem{Closed cross-tenant and auth gaps across 6 dashboard services with middleware that injects org-ID predicates into every query, scopes WebSocket rooms per org, and fails closed on JWT checks, enforced by CI audit gates}
+        \resumeItem{Automated cleaning of 50+ hours of training audio via a Python tool localizing and beamforming array recordings}
+        \resumeItem{Slashed recording setup from 10 to 2 minutes by swapping a tethered rig for a Raspberry Pi audio service over SSH}
       \resumeItemListEnd
   
     \resumeSubheading
       {Software Engineer Intern}{March 2026 -- June 2026}
       {Kenoxis Technologies Inc.}{Mississauga, ON}
       \resumeItemListStart
-        \resumeItem{Lowered API latency by 35\% with Redis caching across Node.js microservices on a fraud detection platform}
+        \resumeItem{Lowered API latency by 35\% by caching posting lookups and auth sessions in Redis across Node.js microservices}
         \resumeItem{Designed MongoDB schemas and ingestion pipelines for job postings, improving refresh from daily to hourly}
-        \resumeItem{Integrated LLM inference into backend services via async queues, reducing time-to-flag suspicious postings by~60\%}
-        \resumeItem{Created candidate distance and map APIs using MongoDB geospatial queries to filter applicants by location}
-        \resumeItem{Accelerated onboarding of 5+ new interns by authoring internal API documentation and integration guides}
+        \resumeItem{Flagged suspicious applicants 60\% faster by queuing LLM document review for fraud, scoring, and LMIA results}
+        \resumeItem{Onboarded 5+ interns with internal API docs and integration guides, cutting repeat API questions to the team}
       \resumeItemListEnd
 
     \resumeSubheading
       {Autonomy Software Developer}{September 2025 -- Present}
       {WATonomous -- Student Design Team}{Waterloo, ON}
       \resumeItemListStart
-        \resumeItem{Built a ROS2 navigation stack running A* path planning over costmap grids and Pure Pursuit control under 10ms per cycle, enabling real-time autonomous rover navigation across dynamic terrain}
+        \resumeItem{Built a ROS 2 navigation stack running A* path planning over a 100x100 m costmap and Pure Pursuit control under 10 ms per cycle, replanning at 10 Hz for real-time autonomous rover navigation}
         \resumeItem{Led YOLO11s model retraining, improving detection mean average precision from 30\% to 80\% across 3,448 labeled images via hyperparameter tuning and augmentation redesign}
-        \resumeItem{Optimized YOLO11s inference to 24 FPS on rover hardware via ONNX export and onnxslim optimization}
+        \resumeItem{Accelerated YOLO11s inference to 30 FPS on a Jetson Nano via ONNX export and onnxslim graph simplification}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -171,24 +170,24 @@
       \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/7-DOF-Arm}{\underline{7-DOF Robotic Arm Motion Control}}} $|$ \emph{C++17, Eigen, MuJoCo, CMake, React, TypeScript}}{}
           \resumeItemListStart
-            \resumeItem{Developed 7-DOF arm kinematics and dynamics from scratch in C++17/Eigen without KDL, MoveIt, or ROS}
-            \resumeItem{Achieved sub-0.2 mm tip error over 50+ scenarios via jerk-limited trajectories and 1 kHz computed-torque control}
-            \resumeItem{Solved 6-DOF inverse kinematics with adaptive damped least squares and 26-seed deterministic restarts}
-            \resumeItem{Prevented collisions via null-space projection of 4 secondary objectives and swept-path checking}
+            \resumeItem{Derived Lie-group kinematics and recursive Newton-Euler dynamics in C++17/Eigen, matching MuJoCo to 1e-13}
+            \resumeItem{Held sub-0.2 mm tip error with zero actuator saturation over 50+ scenarios via jerk-limited 1 kHz computed torque}
+            \resumeItem{Cut worst-case IK replan latency from 40.7 to 10.5 ms across 324 targets via damped least squares with 26 seeds}
+            \resumeItem{Resolved redundancy via annealed null-space projection of 4 objectives and swept joint-space collision checks}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/State-Estimation-And-Tracking}{\underline{Autonomous Vehicle State Estimation \& Tracking}}} $|$ \emph{C++, Eigen, ROS 2, Python, Docker, KITTI}}{}
           \resumeItemListStart
             \resumeItem{Implemented a 15-state error-state Kalman filter fusing 100 Hz IMU with 10 Hz GPS in C++/Eigen on ROS 2}
             \resumeItem{Localized the ego vehicle to 0.558 m mean error over 8 KITTI sequences (6.6 km), cross-checked via evo}
-            \resumeItem{Wrote a 4-mode IMM multi-object tracker (CV, CA, coordinated-turn UKFs) with Hungarian data association}
+            \resumeItem{Reached 0.886 MOTA on ground-truth detections with a CV/CA/CT IMM of UKFs and Hungarian association}
             \resumeItem{Coupled tracking to localization by world-framing detections with the filter's pose (error correlation 0.976)}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{\href{https://github.com/Karan-Gupta07/RepairBOT}{\underline{Reparo - AI Repair Tool (Hack Canada 2026 Winner)}}} $|$ \emph{Python, FastAPI, Swift, Gemini}}{}
           \resumeItemListStart
-            \resumeItem{Prototyped a computer-vision + Gemini reasoning pipeline producing structured repair plans from a single device photo in under 60 seconds via component detection and contextual repair inference}
-            \resumeItem{Engineered a FastAPI orchestration service that normalizes unstructured LLM responses into typed repair models, enabling deterministic UI rendering of repair steps, cost estimates, and required tools}
+            \resumeItem{Turned a photo of a broken device into a structured repair plan (steps, cost, difficulty, repairability score) in under 60 s by chaining Gemini vision for failed-component detection with Gemini reasoning and schema-validated parsing}
+            \resumeItem{Sourced replacement parts automatically by chaining SerpAPI search, Shopify storefront discovery, and Shopify JSON endpoints, mapping Gemini's parts list to a purchasable cart inside a no-install Swift App Clip}
           \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{\href{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
@@ -206,9 +205,8 @@
      \renewcommand{\arraystretch}{1.10}
      \begin{tabular}[t]{@{}l@{}}
        \textbf{Languages}{: C++, Python, MATLAB, Java, JavaScript, TypeScript, SQL} \\[2pt]
-       \textbf{Frameworks}{: React, Next.js, Node.js, Express, FastAPI, Vite} \\[2pt]
-       \textbf{Cloud/DevOps}{: Docker, GitHub Actions, CMake} \\[2pt]
-       \textbf{Libraries/Tools}{: PyTorch, OpenCV, Eigen, MuJoCo, ROS2, ONNX, SQLite, MongoDB, Redis, Git, Foxglove} \\[2pt]
+       \textbf{Frameworks/Libraries}{: ROS 2, PyTorch, OpenCV, Eigen, MuJoCo, ONNX, React, Next.js, Node.js, FastAPI} \\[2pt]
+       \textbf{Infrastructure}{: Docker, GitHub Actions, CMake, Git, SQLite, MongoDB, Redis, Foxglove} \\[2pt]
       %  \textbf{Certifications}{: Docker Foundations Professional}
      \end{tabular}
     }}
