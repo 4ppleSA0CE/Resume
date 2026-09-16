@@ -167,6 +167,14 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
+          {\textbf{\href{https://github.com/Karan-Gupta07/Mr.-Clean-Bracketbot-Cleaning-Robot}{\underline{Mr. Clean - LLM-Orchestrated Mobile Manipulation}}} $|$ \emph{Python, ROS 2, MuJoCo, PyTorch, SB3, Claude API}}{}
+          \resumeItemListStart
+            \resumeItem{Drove 9/9 routes within 10 cm / 5\textdegree{} with 0 falls under a classical nav controller (A*, clamped cubic splines, footprint-inflated occupancy grid, dock navigator that replans live) with SLAM Toolbox localizing to 1.4 mm / 0.2\textdegree{}}
+            \resumeItem{Ran a 7 min 48 s tour from one prompt and tidied 4/4 cubes in 13 tool calls under a two-level Claude agent controller (commander, nested skills agent with 6 typed skills) that refuses unknown objects at the tool boundary}
+            \resumeItem{Trained an Action Chunking Transformer controller (ResNet-18 over 3 cameras, 4+4-layer encoder-decoder, 22M params) on 80 scripted demos to predict 32-step joint chunks at 20 Hz, reaching the ball in 4/10 unseen layouts}
+            \resumeItem{Controlled the base with a 512-neuron, 8,688-edge FlyWire connectome subgraph as an SB3 feature extractor (4 rounds of transmitter-signed message passing), hitting 20/20 held-out point goals after behavior cloning}
+          \resumeItemListEnd
+      \resumeProjectHeading
           {\textbf{\href{https://github.com/4ppleSA0CE/7-DOF-Arm}{\underline{7-DOF Robotic Arm Motion Control}}} $|$ \emph{C++17, Eigen, MuJoCo, CMake, React, TypeScript}}{}
           \resumeItemListStart
             \resumeItem{Derived Lie-group kinematics and recursive Newton-Euler dynamics in C++17/Eigen, matching MuJoCo to 1e-13}
@@ -181,14 +189,6 @@
             \resumeItem{Localized the ego vehicle to 0.558 m mean error over 8 KITTI sequences (6.6 km), cross-checked via evo}
             \resumeItem{Reached 0.886 MOTA on ground-truth detections with a CV/CA/CT IMM of UKFs and Hungarian association}
             \resumeItem{Coupled tracking to localization by world-framing detections with the filter's pose (error correlation 0.976)}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/Karan-Gupta07/Mr.-Clean-Bracketbot-Cleaning-Robot}{\underline{Mr. Clean - LLM-Orchestrated Mobile Manipulation}}} $|$ \emph{Python, ROS 2, MuJoCo, PyTorch, SB3, Claude API}}{}
-          \resumeItemListStart
-            \resumeItem{Drove 9/9 routes within 10 cm / 5\textdegree{} with 0 falls under a classical nav controller (A*, clamped cubic splines, footprint-inflated occupancy grid, dock navigator that replans live) with SLAM Toolbox localizing to 1.4 mm / 0.2\textdegree{}}
-            \resumeItem{Ran a 7 min 48 s tour from one prompt and tidied 4/4 cubes in 13 tool calls under a two-level Claude agent controller (commander, nested skills agent with 6 typed skills) that refuses unknown objects at the tool boundary}
-            \resumeItem{Trained an Action Chunking Transformer controller (ResNet-18 over 3 cameras, 4+4-layer encoder-decoder, 22M params) on 80 scripted demos to predict 32-step joint chunks at 20 Hz, reaching the ball in 4/10 unseen layouts}
-            \resumeItem{Controlled the base with a 512-neuron, 8,688-edge FlyWire connectome subgraph as an SB3 feature extractor (4 rounds of transmitter-signed message passing), hitting 20/20 held-out point goals after behavior cloning}
           \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{\href{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{\underline{Autonomous Vehicle Control System}}} $|$ \emph{C++, ROS2, Docker, CMake, Foxglove}}{}
