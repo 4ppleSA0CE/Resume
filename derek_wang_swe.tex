@@ -144,7 +144,7 @@
       {Autonomy Software Developer}{September 2025 -- Present}
       {WATonomous -- Student Design Team}{Waterloo, ON}
       \resumeItemListStart
-        \resumeItem{Built C++ ROS 2 rover navigation: 2 Hz A* path planning over a 30x30 m LiDAR costmap and 10 Hz Pure Pursuit}
+        \resumeItem{Enabled 2 Hz obstacle-aware rover replanning via C++ ROS 2 A* on a 30x30 m LiDAR costmap and 10 Hz Pure Pursuit}
         \resumeItem{Led YOLO11s object detection retraining on 3,916 images from two merged datasets so the rover can spot a hammer, water bottle, and pickaxe at 0.96 mean average precision (mAP50)}
         \resumeItem{Accelerated YOLO11s inference to 30 FPS on the rover's NVIDIA Jetson Nano via ONNX export and onnxslim}
       \resumeItemListEnd
@@ -159,21 +159,23 @@
           {\textbf{Reparo -- AI Repair Assistant} $|$ Hack Canada 2026 Winner (\$5,000) $|$ \emph{Python, FastAPI, Swift, Gemini}}{\small\href{https://github.com/Karan-Gupta07/RepairBOT}{\underline{GitHub}}}
           \resumeItemListStart
             \resumeItem{Turned one device photo into a structured repair plan in under 60 s via component detection and Gemini reasoning}
-            \resumeItem{Normalized unstructured Gemini output into typed FastAPI repair models so steps, costs, and tools render consistently}
-            \resumeItem{Sourced the detected parts into a single checkout via SerpAPI and Shopify APIs inside a no-install Swift App Clip}
+            \resumeItem{Made every repair plan render in one format by normalizing raw Gemini output into typed FastAPI repair models}
+            \resumeItem{Collapsed parts buying into one checkout with no app install via SerpAPI and Shopify APIs in a Swift App Clip}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{Mr. Clean -- LLM-Orchestrated Mobile Manipulation} $|$ \emph{Python, MuJoCo, PyTorch, Claude API}}{\small\href{https://github.com/Karan-Gupta07/Mr.-Clean-Bracketbot-Cleaning-Robot}{\underline{GitHub}} $|$ \href{https://www.youtube.com/watch?v=WjJpOjjXQZs}{\underline{Demo}}}
           \resumeItemListStart
-            \resumeItem{Engineered a Claude commander that turns one typed prompt into tool calls routing a simulated two-arm robot across 3 tables, each run by its own controller: an LLM skills agent, an imitation-learning policy, or a fly-connectome policy}
+            \resumeItem{Drove a simulated two-arm robot across 3 tables from one typed prompt by building a Claude commander that hands each table to its own controller: an LLM skills agent, an imitation-learning policy, or a fly-connectome policy}
             \resumeItem{Sorted 4/4 cubes in 13 tool calls via a nested Claude agent whose 6 typed skills refuse unknown objects at the boundary}
             \resumeItem{Steered the base to 20/20 unseen goals with a policy wired from a fruit fly's brain (512-neuron FlyWire connectome)}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{Silhouette -- Cursor for Fashion} $|$ \emph{Node.js, Next.js, Express, MongoDB, Gemini}}{\small\href{https://github.com/Rababb-P/Silhouette}{\underline{GitHub}} $|$ \href{https://www.youtube.com/watch?v=Msyh6SsYRC4}{\underline{Demo}}}
+          {\textbf{7-DOF Robotic Arm Motion Control} $|$ \emph{C++17, Eigen, MuJoCo, CMake, React, TypeScript}}{\small\href{https://github.com/4ppleSA0CE/7-DOF-Arm}{\underline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Generated new outfits on the user's live-camera photo with Overshoot image analysis and Gemini, returning shoppable recommendations in under 2 s from async Gemini pipelines on a MERN stack}
-            \resumeItem{Secured a VC referral to continue development of the app as a proof of concept (\href{https://github.com/Parsa1ll/tailorai}{\underline{Tailor AI}}) for Merian Brothers}
+            \resumeItem{Wrote 7-DOF arm kinematics and dynamics from scratch in C++ using Lie groups and recursive Newton-Euler, matching MuJoCo on 1,000 test poses for forward kinematics and inverse dynamics}
+            \resumeItem{Held tip error under 0.2 mm on 46/49 targets with zero actuator saturation via jerk-limited 1 kHz computed torque}
+            \resumeItem{Removed arm vibration and a 2 cm tolerance by moving inverse kinematics out of the 1 kHz loop to replan on demand}
+            \resumeItem{Kept the elbow clear of obstacles and joint limits while holding the tool within 0.2 mm via null-space projection}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -186,8 +188,7 @@
      \begin{tabular}[t]{@{}l@{}}
        \textbf{Languages}{: Python, TypeScript, JavaScript, C++, Java, SQL, MATLAB} \\[2pt]
        \textbf{Frameworks/Libraries}{: React, Next.js, Node.js, Express, FastAPI, PyTorch, OpenCV, ROS 2, ONNX} \\[2pt]
-       \textbf{Infrastructure}{: Docker, GitHub Actions, Git, MongoDB, Redis, SQLite, CMake} \\[2pt]
-       \textbf{Concepts}{: REST APIs, Microservices, Caching, Async Job Queues, WebSockets, JWT Auth, CI/CD, LLM Agents} \\[2pt]
+       \textbf{Infrastructure}{: Linux, Docker, GitHub Actions, Git, MongoDB, Redis, SQLite, CMake} \\[2pt]
       %  \textbf{Certifications}{: Docker Foundations Professional}
      \end{tabular}
     }}
