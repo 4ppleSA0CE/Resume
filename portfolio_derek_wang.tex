@@ -294,7 +294,7 @@ Sequence & s & ATE (m) & GPS only & NEES in band & Sequence & s & ATE (m) & GPS 
 
 %======================= PAGE 5 =======================
 \newpage
-\project{WATonomous: Rover Navigation and Perception}{\lnk{https://github.com/4ppleSA0CE/Autonomous-Vehicle-Control-System}{GitHub}}
+\project{WATonomous: Rover Navigation and Perception}{\lnk{https://github.com/WATonomous/wato_rover}{GitHub}}
 \stack{C++, ROS 2, Python, YOLO11s, ONNX Runtime}{mAP50 0.96 on 478 validation images}
 {\small\setlength{\figh}{1.15in}
 \figpair{wato_foxglove.jpg}{Costmap (purple), planned path (green) and the rover in simulation}{wato_yolo.jpg}{Retrained detector on a test image}
@@ -302,7 +302,7 @@ Sequence & s & ATE (m) & GPS only & NEES in band & Sequence & s & ATE (m) & GPS 
   \item ROS 2 navigation stack in C++: LiDAR scans fill a 30 m by 30 m costmap (10 cm cells, 0.5 m inflation), and a map-memory node merges the local costmaps into a global grid
   \item \textbf{A*} on the global grid with replanning at 2 Hz; \textbf{Pure Pursuit} path following at 10 Hz
   \item Retrained \textbf{YOLO11s} on 3,916 labelled images from two merged data sets to find an orange hammer, a water bottle and a pickaxe
-  \item mAP50 0.96 and mAP50-95 0.87 on 478 validation images after 100 epochs; runs on the rover as a ROS 2 node from an \textbf{ONNX} export
+  \item mAP50 0.96 and mAP50-95 0.87 on 478 validation images (best epoch 83; early stopping ended training at 98 of 100); runs on the rover as a ROS 2 node from an \textbf{ONNX} export
 \end{points}
 }
 

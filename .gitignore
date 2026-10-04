@@ -22,3 +22,6 @@ Thumbs.db
 .idea/
 *.sublime-workspace
 *.sublime-project
+
+# Local design notes (contain a claim audit; this repo is public)
+docs/superpowers/
