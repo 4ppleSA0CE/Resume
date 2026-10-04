@@ -57,7 +57,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1\vspace{-1pt}}
+    {#1\vspace{0pt}}
   }
 }
 
@@ -90,7 +90,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -124,10 +124,9 @@
       {Prandtl Dynamics Inc.}{Toronto, ON}
       \resumeItemListStart
         \resumeItem{Closed cross-tenant data exposure across 6 dashboard services with middleware that injects org-ID predicates into every query, scopes WebSocket rooms per org, and fails closed on JWT checks, enforced by CI audit gates}
-        \resumeItem{Tracked 5+ DJI drones at 170 m with 20 ms latency via a real-time Python pipeline chaining SRP-PHAT localization, per-source beamforming, and Unscented Kalman Filter tracking on a single microphone array}
-        \resumeItem{Raised acoustic drone detection to 98\% mAP with 40\% fewer false alarms at half the size via EfficientAT in PyTorch}
+        \resumeItem{Tracked 5+ simultaneous DJI drones at 170 m with 20 ms latency via a real-time Python pipeline chaining sound-source localization, beamforming, and Kalman-filter tracking on a single microphone array}
+        \resumeItem{Raised acoustic drone detection from 85\% to 98\% mAP on a held-out split, with 40\% fewer false alarms at half the size, by replacing the YAMNet audio classifier with EfficientAT in PyTorch}
         \resumeItem{Automated cleaning of 50+ hours of training audio with a Python pipeline that localizes and beamforms recordings}
-        \resumeItem{Slashed recording setup from 10 to 2 minutes by swapping a tethered rig for a Raspberry Pi audio service over SSH}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -145,8 +144,7 @@
       {WATonomous -- Student Design Team}{Waterloo, ON}
       \resumeItemListStart
         \resumeItem{Enabled 2 Hz obstacle-aware rover replanning via C++ ROS 2 A* on a 30x30 m LiDAR costmap and 10 Hz Pure Pursuit}
-        \resumeItem{Led YOLO11s object detection retraining on 3,916 images from two merged datasets so the rover can spot a hammer, water bottle, and pickaxe at 0.96 mean average precision (mAP50)}
-        \resumeItem{Accelerated YOLO11s inference to 30 FPS on the rover's NVIDIA Jetson Nano via ONNX export and onnxslim}
+        \resumeItem{Led YOLO11s object detection retraining on 3,916 images to 0.96 mean average precision (mAP50) and accelerated inference to 30~FPS on the rover's NVIDIA Jetson Nano via ONNX export and onnxslim}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -175,7 +173,6 @@
             \resumeItem{Wrote 7-DOF arm kinematics and dynamics from scratch in C++ using Lie groups and recursive Newton-Euler, matching MuJoCo on 1,000 test poses for forward kinematics and inverse dynamics}
             \resumeItem{Held tip error under 0.2 mm on 46/49 targets with zero actuator saturation via jerk-limited 1 kHz computed torque}
             \resumeItem{Removed arm vibration and a 2 cm tolerance by moving inverse kinematics out of the 1 kHz loop to replan on demand}
-            \resumeItem{Kept the elbow clear of obstacles and joint limits while holding the tool within 0.2 mm via null-space projection}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
@@ -186,7 +183,7 @@
     \small{\item{
      \renewcommand{\arraystretch}{1.10}
      \begin{tabular}[t]{@{}l@{}}
-       \textbf{Languages}{: Python, TypeScript, JavaScript, C++, Java, SQL, MATLAB} \\[2pt]
+       \textbf{Languages}{: Python, TypeScript, JavaScript, C++, Java, Swift, SQL, MATLAB} \\[2pt]
        \textbf{Frameworks/Libraries}{: React, Next.js, Node.js, Express, FastAPI, PyTorch, OpenCV, ROS 2, ONNX} \\[2pt]
        \textbf{Infrastructure}{: Linux, Docker, GitHub Actions, Git, MongoDB, Redis, SQLite, CMake} \\[2pt]
       %  \textbf{Certifications}{: Docker Foundations Professional}
